@@ -24,9 +24,7 @@ private EditText phone_number;
         //验证手机号是否正确
         //测试
         EditText phone_number=(EditText)findViewById(R.id.phone_number);
-
         String telphone=phone_number.getText().toString();
-
         btn_mima2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,7 +50,6 @@ private EditText phone_number;
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.yanzhengma:
-
                 String telphone=phone_number.getText().toString();
                 boolean judge = isMobileNO(telphone);
                 if (judge == true) {
@@ -68,11 +65,11 @@ private EditText phone_number;
 
     //验证手机号
     public  static boolean isMobileNO (String telphone) {
-
         String telRegex = "[1][358]\\d{9}";//"[1]"代表第1位为数字1，"[358]"代表第二位可以为3、5、8中的一个，"\\d{9}"代表后面是可以是0～9的数字，有9位。
         if (TextUtils.isEmpty(telphone)){
             return false;
         }
-        else return telphone.matches(telRegex);
+        else
+            return telphone.matches(telRegex);
     }
 }
