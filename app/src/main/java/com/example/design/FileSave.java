@@ -1,4 +1,5 @@
 package com.example.design;
+
 import android.content.Context;
 
 import java.io.FileInputStream;
@@ -21,9 +22,9 @@ public class FileSave {
         } catch (Exception e) {
             e.printStackTrace();
             return false;
-        }finally {
+        } finally {
             try {
-                if(fos != null){
+                if (fos != null) {
                     fos.close();
                 }
             } catch (IOException e) {
@@ -31,6 +32,7 @@ public class FileSave {
             }
         }
     }
+
     //从data.txt文件中获取存储的账号和密码
     public static Map<String, String> getUserInfo(Context context) {
         String content = "";
@@ -52,9 +54,9 @@ public class FileSave {
         } catch (Exception e) {
             e.printStackTrace();
             return null;
-        }finally {
+        } finally {
             try {
-                if(fis != null){
+                if (fis != null) {
                     fis.close();
                 }
             } catch (IOException e) {
