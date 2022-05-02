@@ -12,6 +12,7 @@ import com.example.design.utils.ToastUtil;
 public class activity_delete extends AppCompatActivity {
     private EditText etName;
     private MySQLiteOpenHelper mMySQLiteOpenHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,7 @@ public class activity_delete extends AppCompatActivity {
         initView();
         mMySQLiteOpenHelper = new MySQLiteOpenHelper(this);
     }
+
     private void initView() {
         etName = findViewById(R.id.et_name);
 
@@ -30,10 +32,10 @@ public class activity_delete extends AppCompatActivity {
 
         int rows = mMySQLiteOpenHelper.deleteDataFromDbByName(name);
 
-        if(rows > 0) {
-            ToastUtil.toastShort(this,"删除成功， 删除了" + rows + "行");
-        }else {
-            ToastUtil.toastShort(this,"删除失败");
+        if (rows > 0) {
+            ToastUtil.toastShort(this, "删除成功， 删除了" + rows + "行");
+        } else {
+            ToastUtil.toastShort(this, "删除失败");
         }
         Log.i("DeleteActivity", "end deleteOnClick method");
     }

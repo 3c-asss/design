@@ -8,9 +8,10 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class chengyuanActivity extends AppCompatActivity implements View.OnClickListener{
-    Button   btnQueryData;
-    ImageView   btnDeleteData,btnUpdateData,btnInsertData, btnReport;
+public class chengyuanActivity extends AppCompatActivity implements View.OnClickListener {
+    Button btnQueryData;
+    ImageView btnDeleteData, btnUpdateData, btnInsertData, btnReport;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +33,10 @@ public class chengyuanActivity extends AppCompatActivity implements View.OnClick
         btnDeleteData.setOnClickListener(this);
         btnReport.setOnClickListener(this);
     }
+
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.btn_insertData:
                 Intent intent_insert = new Intent();
                 intent_insert.setClass(chengyuanActivity.this, activity_insert.class);

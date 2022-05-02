@@ -28,6 +28,7 @@ public class activity_report extends AppCompatActivity {
         ReportAdapter adapter = new ReportAdapter(this, studentList);
         rvReport.setAdapter(adapter);
     }
+
     private void initView() {
         rvReport = findViewById(R.id.rv_report);
     }
