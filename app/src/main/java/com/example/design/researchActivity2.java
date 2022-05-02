@@ -22,6 +22,7 @@ private EditText phone_number;
         setContentView(R.layout.activity_reseach2);
         initView();
         //验证手机号是否正确
+        //测试
         EditText phone_number=(EditText)findViewById(R.id.phone_number);
 
         String telphone=phone_number.getText().toString();
