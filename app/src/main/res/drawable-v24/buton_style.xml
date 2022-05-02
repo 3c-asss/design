@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    <item android:state_pressed="true" android:drawable="@drawable/user" />-->
+<!--    <item android:state_focused="true" android:drawable="@drawable/user" />-->
+<!--    <item android:drawable="@drawable/user" />-->
+<!--    <item android:state_selected="true" android:color="#FFF" />-->
+
+<!--    <item android:state_focused="true" android:color="#FFF" />-->
+
+<!--    <item android:state_pressed="true" android:color="#FFF" />-->
+
+<!--    <item android:color="#000" />-->
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 描边 -->
+            <stroke
+                android:width="2dp"
+                android:color="#15ccf2"/>
+            <solid android:color="#15ccf2"/>
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"/>
+            <!--  圆角 -->
+            <corners
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"/>
+        </shape>
+    </item>
+
+    <!-- 获得焦点时样式-->
+    <item android:state_focused="true">
+        <shape>
+            <gradient
+                android:angle="270"
+                android:centerColor="#00ff00"
+                android:endColor="#ffc2b7"
+                android:startColor="#f0f"
+                android:type="sweep"/>
+            <stroke
+                android:width="2dp"
+                android:color="#dcdcdc"/>
+            <corners
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"/>
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"/>
+        </shape>
+    </item>
+
+</selector>

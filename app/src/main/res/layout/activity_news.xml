@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".news">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#15ccf2"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/note_back"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="11dp"
+           android:src="@drawable/fanhui"/>
+        <TextView
+            android:id="@+id/note_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="新闻"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/btn_insertData"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">  <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="“衍爱”教育搭建育人魔方，新洲区思源实验学校“低进高出”筑梦未来"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="   479分、476分、465分……中考放榜，一封封喜报不断飞来。“教学有方，师者仁心”“爱生如子师者风范，授业唯真教坛先锋”……一面面锦旗被家长送到武汉市新洲区思源实验学校。
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/news1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="作为一所地处城乡接合部、生源大多为农村留守少年和外来务工人员子女的寄宿制公办学校，近年来，该校届届都有五六十名学生考入省示范高中新洲一中，近200名学生过市示范线，真正实现了“低进高出”的奇迹。近日，极目新闻记者走进该校，探访学校飞速发展的秘诀。
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/news2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="  进校第一次英语考试仅考了29分，最终却“意外”升入新洲一中，这样的逆袭你见过吗？
+
+“孩子八年级期末时，我们觉得她能读个普高就满意了。中考前，班主任孙老师说她考新洲一中有戏，我都不敢相信！”该校九（1）班盖同学的妈妈告诉极目新闻记者，孩子六年级才从河北邯郸转到新洲阳逻读书，面对教材不同、语言不通等问题，孩子经过七八年级打基础，在化学老师孙海兵接手九年级班主任后实现蜕变。“特别感谢化学孙老师、英语王老师，还有袁主任，他们真的把她当成自己的孩子一样！”
+
+盖妈妈所说的袁主任，是该校年级主任袁金喜。八年级时，盖同学因为家里多了个妹妹，总觉得父母“不爱自己”了，在学校也经常憋着一股气。于是袁金喜时常找她谈心，帮她解开心结。
+
+而在王老师不断督促她背单词、做阅读之下，盖同学的中考英语拿到85分，正是这关键的提分，让她以2分的优势踩线进入新洲一中。
+
+“她对化学很感兴趣，特别爱问问题，我就引导她从化学入手，调动她学习其它学科的积极性。”孙海兵说，“中考前的模拟考，她的考试状态不错，分数已经接近一中了。”
+
+极目新闻记者走访该校发现，这样的奇迹出现在新洲区思源实验学校，其实并不是偶然，而是该校160多名教师以校为家、爱生如子，不断用爱浇筑学生梦想的结果——针对七年级进口生源基础差的现状，林慧凤从练字抓起，引导学生们多读经典，提炼观点，多看新闻，写微评论；为了帮助英语成绩较差的学生不掉队，张细利利用节假日时间，把学生们带到自己家中无偿补课；对于不同学习成绩和目标的学生，学校开辟专门教室，采取分层辅导的模式“开小灶”；各科老师会在课间默契地“无缝对接”，甚至午休都在教室的躺椅上将就……
+
+在该校操场一隅，极目新闻记者发现一件由师生们共同打造的作品“成器”——意为沐水为坯，浴火成器。
+
+“不管是学困生、待进生、贫困生、留守生、返校生，我们都希望他们能在思源为坯成器，各得其所，各美其美。”李玉红校长说，“让每一名农村贫困学生都能享受现代优质教育，让他们都有美好的未来，就是我们不断追求的目标。”
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/news3"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

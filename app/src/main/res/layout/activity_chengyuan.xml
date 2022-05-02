@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chengyuanActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#15ccf2"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/note_back"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="11dp"
+            android:text="班课"/>
+        <TextView
+            android:id="@+id/note_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="作业查"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/btn_insertData"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/add" />
+
+    </RelativeLayout>
+<SearchView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:queryHint="查找数据" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#15ccf2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btn_deleteData"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/shanchu"
+            android:paddingBottom="15dp"
+            android:paddingTop="9dp"/>
+        <ImageView
+            android:id="@+id/btn_updateData"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xiugai"
+            android:paddingBottom="15dp"
+            android:paddingTop="9dp"/>
+        <ImageView
+            android:id="@+id/btn_report"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chengyuan"
+            android:paddingBottom="15dp"
+            android:paddingTop="9dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/faxianwenzi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:text="删除"
+            android:textColor="#272727"
+            android:gravity="center"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/myswenzi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:textColor="#272727"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:id="@+id/wenzi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="成员"
+            android:textSize="25dp"
+            android:textColor="#272727"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_queryData"
+        style="@style/MyBtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询数据" />
+
+
+</LinearLayout>
