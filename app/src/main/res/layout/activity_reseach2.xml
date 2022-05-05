@@ -67,7 +67,7 @@
             android:background="#15ccf2"
             android:textColor="#ffffff"
             android:textStyle="bold"
-            android:id="@+id/yanzhengma"
+            android:id="@+id/Code"
             android:text="@string/code"/>
         <Button
             android:layout_width="match_parent"

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.design">
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,20 +19,29 @@
         <activity android:name=".splash_scteen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".myselfActivity" />
         <activity android:name=".nav_MainActivity2" />
-        <activity android:name=".lunboActivity2" /> <!-- <meta-data -->
-        <!-- android:name="com.google.android.actions" -->
-        <!-- android:resource="@xml/sytsactions" /> -->
-        <activity android:name=".registation" /> <!-- android:label="@string/title_activity_nav__main2" -->
+        <activity android:name=".lunboActivity2" />
+
+        <activity android:name=".registation" />
         <activity android:name=".researchActivity2" />
         <activity android:name=".MainActivity" />
 
     </application>
     <uses-feature android:name="android.hardware.camera"
         android:required="true" />
+    <!--蓝牙模组-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" /><!-- 仅在支持BLE（即蓝牙4.0）的设备上运行 -->
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/> <!-- 如果Android 6.0 蓝牙搜索不到设备，需要补充下面两个权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 互联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 </manifest>
