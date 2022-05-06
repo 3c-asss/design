@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".ValidationActivity">
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入验证码"
+        android:background="@drawable/buton_style"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证码已发送到"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/phoneNumber1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/num_in1_et"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#3AB3CB"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/num_in2_et"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#3AB3CB"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/num_in3_et"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#3AB3CB"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/num_in4_et"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#3AB3CB"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
